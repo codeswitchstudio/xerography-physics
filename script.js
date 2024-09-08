@@ -175,7 +175,7 @@ class Sketch {
               Matter.Vector.create(this.width / 2, this.height / 3),
               bod.position
             ),
-            0.0003
+            0.003
           )
         );
 
