@@ -136,7 +136,7 @@ class Sketch {
       bod.htmlElementOffset = { top: b.top, left: b.left };
       Body.scale(bod, b.width, b.height);
       bod.frictionAir = 0.2;
-      //Body.setDensity(bod, 10);
+      Body.setDensity(bod, 7); //----------------------------------gravity!
       bod.htmlElement = elem;
 
       bod.update = () => {
