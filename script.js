@@ -128,14 +128,14 @@ class Sketch {
       elem.classList.add("abs");
 
       var bod = Bodies.rectangle(
-        b.left + b.width / 2,
-        b.top + b.height / 2,
+        b.left + b.width / 3,
+        b.top + b.height / 5,
         1,
         1
       );
       bod.htmlElementOffset = { top: b.top, left: b.left };
       Body.scale(bod, b.width, b.height);
-      bod.frictionAir = 0.2;
+      bod.frictionAir = 0.07;
       Body.setDensity(bod, 7); //----------------------------------gravity!
       bod.htmlElement = elem;
 
