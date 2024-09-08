@@ -12,28 +12,39 @@ body {
   /* background-color: #fff; */
   /* background-color: rgb(130, 130, 130); */
   color: #000;
-  font-family: 'Raleway', sans-serif;
+  /* font-family: 'Raleway', sans-serif; */
 }
 
 #nav {
-  font-weight: 800;
+  font-weight: 600;
   z-index: 600;
-  font-family: "Raleway", sans-serif;
+  /* font-family: "Raleway", sans-serif; */
+  /* background-color: black; */
 }
 
 navbar {
   /* z-index: 300; */
-  color: #000;
+  color: #070000;
+  background-color: black;
 }
 
-/* unvisited link */
-a:link {
-  color: rgb(0, 0, 0);
+
+
+.navbar {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  background-color: black;
 }
+/* unvisited link */
+/* a:link {
+  color: rgb(250, 250, 250);
+  font-weight: 600;
+} */
 
 /* visited link */
 #nav a:visited {
-  color: rgb(60, 60, 60);
+  color: rgb(238, 220, 220);
 }
 
 /* mouse over link */
@@ -49,7 +60,8 @@ a:link {
 
 
 #nav a {
-  color: #000;
+  font-weight: 400;
+  color: #fff;
 }
 
 #nav a link:hover {
@@ -61,15 +73,16 @@ a link:visited {
 }
 
 container {
-  position: relative;
+  position:fixed;
+  top: 50px;
+
 }
 
 canvas {
   opacity: 0;
-
   display: block;
   position: fixed;
-  top: 0;
+  top: 10%;
   left: 0;
   height: 100vh;
   width: 100vw;
@@ -103,27 +116,33 @@ canvas {
 
 .smol {
   width: 100px;
-  z-index: 50;
+  /* z-index: 50; */
 }
 
 .med {
   width: 150px;
-  z-index: 70;
+  /* z-index: 70; */
 }
 
-h1,
-h2,
-h3 {
-  color: #eaac8b;
+
+.text {
+  position: fixed;
+  top: 25%;
+  left: 30px;
+  font-weight: 800;
+  /* font-family: 'Raleway', sans-serif; */
+  font-size: larger;
+  z-index: 80;
+
 }
 
 div.filled,
 div.outline {
   position: fixed;
-  /* top: 100px; */
-  left: 7%;
-  width: 90%;
-  height: 90%;
+  top: 10px;
+  left: 10px;
+  width: 25%;
+  height: 25%;
   z-index: 2;
   pointer-events: none;
 
@@ -133,7 +152,7 @@ div.outline {
   background-size: contain;
 }
 
-div.outline {
+/* div.outline {
   background-image: url(./images/outline-logo.svg);
   z-index: 100;
-}
+} */

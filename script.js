@@ -78,7 +78,7 @@ class Sketch {
       mouseConstraint = Matter.MouseConstraint.create(this.engine, {
         mouse: mouse,
         constraint: {
-          stiffness: 0.02,
+          stiffness: 0.2,
           render: {
             visible: false,
           },
@@ -135,8 +135,8 @@ class Sketch {
       );
       bod.htmlElementOffset = { top: b.top, left: b.left };
       Body.scale(bod, b.width, b.height);
-      bod.frictionAir = 0.9;
-      // Body.setDensity(bod, 7);
+      bod.frictionAir = 0.2;
+      //Body.setDensity(bod, 10);
       bod.htmlElement = elem;
 
       bod.update = () => {
