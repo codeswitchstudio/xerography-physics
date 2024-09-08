@@ -128,15 +128,15 @@ class Sketch {
       elem.classList.add("abs");
 
       var bod = Bodies.rectangle(
-        b.left + b.width / 3,
-        b.top + b.height / 5,
+        b.left + b.width / 2,
+        b.top + b.height / 2,
         1,
         1
       );
       bod.htmlElementOffset = { top: b.top, left: b.left };
       Body.scale(bod, b.width, b.height);
-      bod.frictionAir = 0.07;
-      Body.setDensity(bod, 7); //----------------------------------gravity!
+      bod.frictionAir = 0.05;
+      Body.setDensity(bod, 9); //----------------------------------gravity!
       bod.htmlElement = elem;
 
       bod.update = () => {
@@ -172,7 +172,7 @@ class Sketch {
           bod.position,
           Matter.Vector.mult(
             Matter.Vector.sub(
-              Matter.Vector.create(this.width / 2, this.height / 2),
+              Matter.Vector.create(this.width / 2, this.height / 3),
               bod.position
             ),
             0.0003
