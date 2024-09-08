@@ -78,7 +78,7 @@ class Sketch {
       mouseConstraint = Matter.MouseConstraint.create(this.engine, {
         mouse: mouse,
         constraint: {
-          stiffness: 0.2,
+          stiffness: 0.1,
           render: {
             visible: false,
           },
@@ -129,14 +129,14 @@ class Sketch {
 
       var bod = Bodies.rectangle(
         b.left + b.width / 2,
-        b.top + b.height / 2,
+        b.top + b.height / 3,
         1,
-        1
+        2
       );
       bod.htmlElementOffset = { top: b.top, left: b.left };
       Body.scale(bod, b.width, b.height);
-      bod.frictionAir = 0.05;
-      Body.setDensity(bod, 9); //----------------------------------gravity!
+      bod.frictionAir = 0.009;
+      Body.setDensity(bod, 5); //----------------------------------gravity!
       bod.htmlElement = elem;
 
       bod.update = () => {
@@ -161,8 +161,8 @@ class Sketch {
           "px) rotate(" +
           angle +
           "rad) scale3d(1,1,1)";
-        //translate("+(elem.offsetWidth/-2)+"px, "+(elem.offsetHeight/-2)+"px)
-        //aconsole.log(transform);
+        // translate("+(elem.offsetWidth/-2)+"px, "+(elem.offsetHeight/-2)+"px)
+        // aconsole.log(transform);
 
         var sinAng = 2 * Math.sin(bod.angle);
         var cosAng = 2 * Math.cos(bod.angle);
@@ -175,7 +175,7 @@ class Sketch {
               Matter.Vector.create(this.width / 2, this.height / 3),
               bod.position
             ),
-            0.003
+            0.03
           )
         );
 

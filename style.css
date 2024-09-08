@@ -20,6 +20,7 @@ h1 {
   top: 10px;
   left: 30px;
   z-index: 300;
+  background-color: #fff;
 }
 
 span {
@@ -43,8 +44,9 @@ canvas {
   left: 40px;
   font-weight: 400;
   font-size: large;
-  z-index: 80;
+  z-index: 400;
   font-family: "Alegreya", serif;
+  background-color: #fff;
 
 }
 
