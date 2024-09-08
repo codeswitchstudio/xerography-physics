@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+
+  /* margin: 40px; */
+  /* background-color: #6d597a; */
+  background-color: #989898;
+  /* background-color: #e6decf; */
+  /* background-color: #fff; */
+  /* background-color: rgb(130, 130, 130); */
+  color: #000;
+  font-family: 'Raleway', sans-serif;
+}
+
+#nav {
+  font-weight: 800;
+  z-index: 600;
+  font-family: "Raleway", sans-serif;
+}
+
+navbar {
+  /* z-index: 300; */
+  color: #000;
+}
+
+/* unvisited link */
+a:link {
+  color: rgb(0, 0, 0);
+}
+
+/* visited link */
+#nav a:visited {
+  color: rgb(60, 60, 60);
+}
+
+/* mouse over link */
+#nav a:hover {
+  color: red);
+}
+
+/* selected link */
+#nav a:active {
+  color: rgb(255, 0, 0);
+}
+
+
+
+#nav a {
+  color: #000;
+}
+
+#nav a link:hover {
+  color: #ff0000;
+}
+
+a link:visited {
+  color: gray;
+}
+
+container {
+  position: relative;
+}
+
+canvas {
+  opacity: 0;
+
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: -10;
+  pointer-events: auto !important;
+  pointer-events: none;
+  background-color: #989898;
+}
+
+.physicsDiv {
+  /* border-radius: 10px; */
+  /* margin: 10px; */
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  width: 110px;
+  cursor: rgb(255, 0, 0) !important;
+  box-shadow: 1px 1px 2px 1px #989898;
+  transform-origin: center;
+  /* background-color: #cad8de; */
+
+  background-color: #989898;
+  /* background; */
+  margin: 0;
+}
+
+.autoWidth {
+  width: auto;
+}
+
+.smol {
+  width: 100px;
+  z-index: 50;
+}
+
+.med {
+  width: 150px;
+  z-index: 70;
+}
+
+h1,
+h2,
+h3 {
+  color: #eaac8b;
+}
+
+div.filled,
+div.outline {
+  position: fixed;
+  /* top: 100px; */
+  left: 7%;
+  width: 90%;
+  height: 90%;
+  z-index: 2;
+  pointer-events: none;
+
+  background-image: url(./images/filled-logo.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+div.outline {
+  background-image: url(./images/outline-logo.svg);
+  z-index: 100;
+}
